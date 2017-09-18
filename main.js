@@ -23,4 +23,18 @@ Description: This is the javascript file for calculator for division
     numForm.addEventListener('click',function(){
        this.select();
     });
+
+    btn.addEventListener('click',function(){
+       var price = priceForm.value;
+       var num = numForm.value;
+       
+       if(price.match(/^[1-9][0-9]*$/)){
+       	//ok
+        result.innerHTML = 'OK';
+       }else{
+       	//error
+       	result.innerHTML='Error';
+       }
+
+    });
 })();
