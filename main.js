@@ -30,7 +30,11 @@ Description: This is the javascript file for calculator for division
        
        if(price.match(/^[1-9][0-9]*$/)){
        	//ok
-        result.innerHTML = 'OK';
+        //result.innerHTML = 'OK';
+        if((price%num)===0)
+        {
+        	result.innerHTML = price + '/' + num +'=' +(price/num);
+        }
        }else{
        	//error
        	result.innerHTML='Error';
